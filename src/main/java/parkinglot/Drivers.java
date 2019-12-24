@@ -1,5 +1,4 @@
 package parkinglot;
-
 public class Drivers {
     private String driverName;
 
