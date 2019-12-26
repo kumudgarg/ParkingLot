@@ -8,8 +8,7 @@ public class Car {
     private Double allottedTime;
     private String driverType;
 
-    public Car() {
-    }
+
     public Car(String carName, String numberPlate, String colorOfCar, Double timeOfParkingCar, Double allottedTime) {
         this.carName = carName;
         this.numberPlate = numberPlate;

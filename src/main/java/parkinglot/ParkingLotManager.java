@@ -28,10 +28,10 @@ public class ParkingLotManager {
         return false;
     }
 
-    public boolean getUnparkVehicle(String numberPlate) {
+    public boolean getUnparkVehicle(String numberPlate) throws ParkingLotException {
         if(!carParkedInParkingLot.isEmpty()){
             carParkedInParkingLot.remove(numberPlate);
             return true; }
-        return false;
+        throw new ParkingLotException("there is no vehicle in parking lot",ParkingLotException.ParkingSecurity.PARKING_LOT_IS_EMPTY);
     }
 }
