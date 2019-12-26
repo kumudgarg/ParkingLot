@@ -90,4 +90,21 @@ public class ParkingLotTest {
             Assert.assertEquals(ParkingLotException.ParkingSecurity.PARKING_LOT_IS_FULL, e.type);
         }
     }
-}
+
+    @Test
+    public void givenParkingLotData_IfVehicleUnpark_ShouldReturnBooleanEquality() {
+        try {
+            ParkingLotManager parkingLotManager = new ParkingLotManager();
+            for (Car car : carRegisters) {
+
+                parkingLotManager.loadVehicleData(car);
+            }
+            parkingLotManager.getUnparkVehicle("MH05-DO10217");
+            Assert.assertEquals(3,parkingLotManager.getOccupiedLot());
+        }    catch (ParkingLotException e) {
+                e.printStackTrace();
+            }
+        }
+
+    }
+
