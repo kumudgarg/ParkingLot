@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class ParkingLotManager {
-    private final Integer PARKING_LOT_SIZE =4;
+    private final Integer PARKING_LOT_SIZE = 4;
     Map<String, Car> carParkedInParkingLot;
 
 
@@ -23,7 +23,7 @@ public class ParkingLotManager {
     }
 
     public boolean isParkingLotsFull() throws ParkingLotException {
-        if (getOccupiedLot() < PARKING_LOT_SIZE)
+        if (getOccupiedLot() > PARKING_LOT_SIZE-1)
             throw new ParkingLotException("this parking lot is full,redirect to another parking lot building",ParkingLotException.ParkingSecurity.PARKING_LOT_IS_FULL);
         return false;
     }
