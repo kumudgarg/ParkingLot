@@ -6,6 +6,7 @@ public class Car {
     private String colorOfCar;
     private Double timeOfParkingCar ;
     private Double allottedTime;
+    private String driverType;
 
     public Car() {
     }
@@ -15,6 +16,7 @@ public class Car {
         this.colorOfCar = colorOfCar;
         this.timeOfParkingCar = timeOfParkingCar;
         this.allottedTime = allottedTime;
+
     }
 
     public Car(String carName) {
