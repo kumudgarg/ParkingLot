@@ -27,4 +27,11 @@ public class ParkingLotManager {
             throw new ParkingLotException("this parking lot is full,redirect to another parking lot building",ParkingLotException.ParkingSecurity.PARKING_LOT_IS_FULL);
         return false;
     }
+
+    public boolean getUnparkVehicle(String numberPlate) {
+        if(!carParkedInParkingLot.isEmpty()){
+            carParkedInParkingLot.remove(numberPlate);
+            return true; }
+        return false;
+    }
 }
