@@ -1,13 +1,12 @@
 package parkinglot;
 
 public class Car {
+
     private String carName;
     private String numberPlate;
     private String colorOfCar;
     private Double timeOfParkingCar ;
     private Double allottedTime;
-    private String driverType;
-
 
     public Car(String carName, String numberPlate, String colorOfCar, Double timeOfParkingCar, Double allottedTime) {
         this.carName = carName;
@@ -15,16 +14,13 @@ public class Car {
         this.colorOfCar = colorOfCar;
         this.timeOfParkingCar = timeOfParkingCar;
         this.allottedTime = allottedTime;
-
     }
 
     public Car(String carName) {
     this.carName = carName;
     }
 
-    public String getNumberPlate() {
-        return numberPlate;
-    }
+    public String getNumberPlate() { return numberPlate; }
 
     public String getCarName() {
         return carName;
