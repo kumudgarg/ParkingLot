@@ -1,14 +1,15 @@
 package parkinglot;
 
-public class Car {
+public class Vehicle {
 
     private String carName;
     private String numberPlate;
     private String colorOfCar;
     private Double timeOfParkingCar ;
     private Double allottedTime;
+    private Integer parkingLotNumber;
 
-    public Car(String carName, String numberPlate, String colorOfCar, Double timeOfParkingCar, Double allottedTime) {
+    public Vehicle(String carName, String numberPlate, String colorOfCar, Double timeOfParkingCar, Double allottedTime) {
         this.carName = carName;
         this.numberPlate = numberPlate;
         this.colorOfCar = colorOfCar;
@@ -16,7 +17,8 @@ public class Car {
         this.allottedTime = allottedTime;
     }
 
-    public Car(String carName) {
+
+    public Vehicle(String carName) {
     this.carName = carName;
     }
 
@@ -25,4 +27,9 @@ public class Car {
     public String getCarName() {
         return carName;
     }
+
+    public Integer getParkingLotNumber() { return parkingLotNumber; }
+
+    public void setParkingLotNumber(Integer parkingLotNumber) { this.parkingLotNumber = parkingLotNumber; }
+
 }
